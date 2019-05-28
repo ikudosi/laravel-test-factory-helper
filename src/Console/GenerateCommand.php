@@ -292,7 +292,7 @@ class GenerateCommand extends Command
                                 $relatedModel = '\\' . get_class($relationObj->getRelated());
                                 $relatedObj = new $relatedModel;
 
-                                $property = $relationObj->getForeignKey();
+                                $property = $relationObj->getForeignKeyName();
                                 $this->setProperty($property,'function () {
              return factory('.get_class($relationObj->getRelated()).'::class)->create()->'.$relatedObj->getKeyName().';
         }');
