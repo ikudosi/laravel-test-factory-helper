@@ -1,3 +1,7 @@
+## Note
+
+This is a Laravel 5.8 version from https://github.com/mpociot/laravel-test-factory-helper
+
 ## Laravel Test Factory Generator
 
 `php artisan test-factory-helper:generate`
